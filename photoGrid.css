@@ -1,0 +1,30 @@
+img {
+	width: 30%;
+	float: left;
+	margin: 1.66%
+}
+
+p {
+	font-family: raleway;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 20px;
+}
+
+
+img.dogpics {
+      filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .5s ease-in-out;
+    }
+
+img.dogpics:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.1);
+}
